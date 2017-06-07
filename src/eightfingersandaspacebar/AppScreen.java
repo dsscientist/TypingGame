@@ -5,18 +5,43 @@
  */
 package eightfingersandaspacebar;
 
+import javax.swing.JPanel;
+
 /**
  *
  * @author shirdav18
  */
 public class AppScreen extends javax.swing.JFrame {
 
-    /**
-     * Creates new form AppScreen
-     */
+    public JPanel[] screens = {new HomeScreen(), new TypingScreen()};
+    //0: home
+    //1: typing
+    public static final int WIDTH = 960;
+    public static final int HEIGHT = 768;
+    
     public AppScreen() {
         initComponents();
+        this.setSize(WIDTH, HEIGHT);
+        this.setLocationRelativeTo(null);
+        for (JPanel j: screens) {
+            this.add(j);
+        }
+        changeScreen(Screen.HOME);
     }
+    
+    public void changeScreen(Screen s) {
+        switch(s) {
+            case HOME:
+                screens[1].setVisible(false);
+                screens[0].setVisible(true);
+                break;
+            case TYPING:
+                screens[0].setVisible(false);
+                screens[1].setVisible(true);
+                break;
+        }
+    }
+            
 
     /**
      * This method is called from within the constructor to initialize the form.
