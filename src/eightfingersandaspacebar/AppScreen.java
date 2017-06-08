@@ -23,8 +23,8 @@ public class AppScreen extends javax.swing.JFrame {
         initComponents();
         this.setSize(WIDTH, HEIGHT);
         this.setLocationRelativeTo(null);
-        for (JPanel j: screens) {
-            this.add(j);
+        for (int i = 0; i < screens.length; i++) {
+            this.add(screens[i]);
         }
         changeScreen(Screen.HOME);
     }
