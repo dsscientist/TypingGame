@@ -5,10 +5,9 @@ import java.awt.*;
 
 public class HomeScreen extends javax.swing.JPanel {
 
-    /**
-     * Creates new form HomeScreen
-     */
-    public HomeScreen() {
+    private AppScreen PARENT;
+    
+    public HomeScreen(AppScreen jf) {
         initComponents();
         this.setSize(960, 768);
         this.setBackground(new Color(204,255,255));
@@ -16,6 +15,7 @@ public class HomeScreen extends javax.swing.JPanel {
         jScrollPane1.setVisible(true);
         startBtn.setVisible(true);
         title.setVisible(true);
+        PARENT = jf;
     }
 
     /**
@@ -83,7 +83,7 @@ public class HomeScreen extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void startBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startBtnActionPerformed
-        ((AppScreen)(this.getParent())).changeScreen(Screen.TYPING);
+        PARENT.changeScreen(Screen.TYPING);
     }//GEN-LAST:event_startBtnActionPerformed
 
 

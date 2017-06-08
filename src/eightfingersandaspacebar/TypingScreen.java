@@ -11,13 +11,13 @@ package eightfingersandaspacebar;
  */
 public class TypingScreen extends javax.swing.JPanel {
 
-    /**
-     * Creates new form TypingScreen
-     */
-    public TypingScreen() {
+    private AppScreen PARENT;
+    
+    public TypingScreen(AppScreen jf) {
         initComponents();
         this.setSize(960, 768);
         jLabel1.setVisible(true);
+        PARENT = jf;
     }
 
     /**

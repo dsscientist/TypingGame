@@ -13,7 +13,7 @@ import javax.swing.JPanel;
  */
 public class AppScreen extends javax.swing.JFrame {
 
-    public JPanel[] screens = {new HomeScreen(), new TypingScreen()};
+    public JPanel[] screens = {new HomeScreen(this), new TypingScreen(this)};
     //0: home
     //1: typing
     public static final int WIDTH = 960;
