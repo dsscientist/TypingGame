@@ -34,7 +34,8 @@ public class HomeScreen extends javax.swing.JPanel {
 
         setPreferredSize(new java.awt.Dimension(960, 768));
 
-        startBtn.setText("Start");
+        startBtn.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        startBtn.setText("START");
         startBtn.setToolTipText("");
         startBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -49,7 +50,7 @@ public class HomeScreen extends javax.swing.JPanel {
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Welcome to David and Sophia's typing test!\n When you are ready, begin by clicking 'Start'.\n You will be taken to the typing test, in which\n a passage of text will be shown above, and \nyou will be asked to copy the passage below in\n the text box. When you are done typing the\n passage, click 'enter', and the time results will\n be given to you shortly.");
+        jTextArea1.setText("Welcome to David and Sophia's typing test! When you are ready, begin by\nclicking 'Start'. You will be taken to the typing test, in which a passage of text\nwill be shown above, and you will be asked to copy the passage below in the\ntext box. When you are done typing the passage, click 'enter', and the time\nresults will be given to you shortly.");
         jTextArea1.setToolTipText("");
         jScrollPane2.setViewportView(jTextArea1);
 

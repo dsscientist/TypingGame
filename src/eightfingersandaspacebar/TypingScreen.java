@@ -13,6 +13,7 @@ public class TypingScreen extends javax.swing.JPanel {
 
     private AppScreen PARENT;
     
+    
     public TypingScreen(AppScreen jf) {
         initComponents();
         this.setSize(960, 768);
@@ -38,6 +39,11 @@ public class TypingScreen extends javax.swing.JPanel {
 
         returnBtn.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         returnBtn.setText("RETURN");
+        returnBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                returnBtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -60,6 +66,10 @@ public class TypingScreen extends javax.swing.JPanel {
                 .addGap(45, 45, 45))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void returnBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnBtnActionPerformed
+        PARENT.changeScreen(Screen.HOME);
+    }//GEN-LAST:event_returnBtnActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

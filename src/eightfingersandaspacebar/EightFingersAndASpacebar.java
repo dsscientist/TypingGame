@@ -11,9 +11,7 @@ package eightfingersandaspacebar;
  */
 public class EightFingersAndASpacebar {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         AppScreen game = new AppScreen();
         game.setVisible(true);

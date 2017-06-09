@@ -55,7 +55,10 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="startBtn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Start"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cambria" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="START"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
       <Events>
@@ -83,7 +86,7 @@
           <Properties>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Welcome to David and Sophia&apos;s typing test!&#xa; When you are ready, begin by clicking &apos;Start&apos;.&#xa; You will be taken to the typing test, in which&#xa; a passage of text will be shown above, and &#xa;you will be asked to copy the passage below in&#xa; the text box. When you are done typing the&#xa; passage, click &apos;enter&apos;, and the time results will&#xa; be given to you shortly."/>
+            <Property name="text" type="java.lang.String" value="Welcome to David and Sophia&apos;s typing test! When you are ready, begin by&#xa;clicking &apos;Start&apos;. You will be taken to the typing test, in which a passage of text&#xa;will be shown above, and you will be asked to copy the passage below in the&#xa;text box. When you are done typing the passage, click &apos;enter&apos;, and the time&#xa;results will be given to you shortly."/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
         </Component>
