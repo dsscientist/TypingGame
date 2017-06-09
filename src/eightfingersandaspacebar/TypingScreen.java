@@ -16,7 +16,8 @@ public class TypingScreen extends javax.swing.JPanel {
     public TypingScreen(AppScreen jf) {
         initComponents();
         this.setSize(960, 768);
-        jLabel1.setVisible(true);
+        restartBtn.setVisible(true);
+        returnBtn.setVisible(true);
         PARENT = jf;
     }
 
@@ -29,30 +30,40 @@ public class TypingScreen extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        restartBtn = new javax.swing.JButton();
+        returnBtn = new javax.swing.JButton();
 
-        jLabel1.setText("jLabel1");
+        restartBtn.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        restartBtn.setText("RESTART");
+
+        returnBtn.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        returnBtn.setText("RETURN");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(118, 118, 118)
-                .addComponent(jLabel1)
-                .addContainerGap(248, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(restartBtn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(returnBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(768, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(125, 125, 125)
-                .addComponent(jLabel1)
-                .addContainerGap(161, Short.MAX_VALUE))
+                .addContainerGap(692, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(restartBtn)
+                    .addComponent(returnBtn))
+                .addGap(45, 45, 45))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton restartBtn;
+    private javax.swing.JButton returnBtn;
     // End of variables declaration//GEN-END:variables
 }
