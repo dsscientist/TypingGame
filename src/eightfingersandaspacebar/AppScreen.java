@@ -13,7 +13,7 @@ import javax.swing.JPanel;
  */
 public class AppScreen extends javax.swing.JFrame {
 
-    public JPanel[] screens = {new HomeScreen(), new TypingScreen()};
+    public JPanel[] screens = {new HomeScreen(), new TypingScreen(),new TypingResultsScreen()};
     //0: home
     //1: typing
     public static final int WIDTH = 960;
@@ -32,13 +32,19 @@ public class AppScreen extends javax.swing.JFrame {
     public void changeScreen(Screen s) {
         switch(s) {
             case HOME:
+                screens[2].setVisible(false);
                 screens[1].setVisible(false);
                 screens[0].setVisible(true);
                 break;
             case TYPING:
+                screens[2].setVisible(false);
                 screens[0].setVisible(false);
                 screens[1].setVisible(true);
                 break;
+            case TYPINGRESULTS:
+                screens[0].setVisible(false);
+                screens[1].setVisible(false);
+                screens[2].setVisible(true);
         }
     }
             

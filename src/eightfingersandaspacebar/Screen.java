@@ -6,5 +6,5 @@
 package eightfingersandaspacebar;
 
 public enum Screen {
-    HOME,TYPING
+    HOME,TYPING,TYPINGRESULTS
 }
