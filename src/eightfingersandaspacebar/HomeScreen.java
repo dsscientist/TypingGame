@@ -11,8 +11,8 @@ public class HomeScreen extends javax.swing.JPanel {
         initComponents();
         this.setSize(960, 768);
         this.setBackground(new Color(204,255,255));
-        instructions.setVisible(true);
-        jScrollPane1.setVisible(true);
+        jTextArea1.setVisible(true);
+        jScrollPane2.setVisible(true);
         startBtn.setVisible(true);
         title.setVisible(true);
         PARENT = jf;

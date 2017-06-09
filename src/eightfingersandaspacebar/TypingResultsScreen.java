@@ -11,11 +11,11 @@ package eightfingersandaspacebar;
  */
 public class TypingResultsScreen extends javax.swing.JPanel {
 
-    /**
-     * Creates new form TypingResultsScreen
-     */
-    public TypingResultsScreen() {
+    private AppScreen PARENT;
+    
+    public TypingResultsScreen(AppScreen jf) {
         initComponents();
+        PARENT = jf;
     }
 
     /**
