@@ -29,8 +29,8 @@ public class HomeScreen extends javax.swing.JPanel {
 
         startBtn = new javax.swing.JButton();
         title = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        instructions = new javax.swing.JTextPane();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setPreferredSize(new java.awt.Dimension(960, 768));
 
@@ -47,40 +47,39 @@ public class HomeScreen extends javax.swing.JPanel {
         title.setText("Eight Fingers and a Space Bar");
         title.setToolTipText("");
 
-        instructions.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        instructions.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        instructions.setText("Welcome to David and Sophia's typing test! When you are ready to begin, click 'Start'. You will be taken to the typing test, in which a passage of text will be shown above, and you will be asked to copy the passage below. When you are done typing the passage, click enter, and the timer will stop and your reults will be given to you shorly.");
-        instructions.setToolTipText("");
-        jScrollPane1.setViewportView(instructions);
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("Welcome to David and Sophia's typing test!\n When you are ready, begin by clicking 'Start'.\n You will be taken to the typing test, in which\n a passage of text will be shown above, and \nyou will be asked to copy the passage below in\n the text box. When you are done typing the\n passage, click 'enter', and the time results will\n be given to you shortly.");
+        jTextArea1.setToolTipText("");
+        jScrollPane2.setViewportView(jTextArea1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(247, 247, 247)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 462, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 251, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(343, 343, 343)
-                        .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(432, 432, 432)
-                        .addComponent(startBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(432, 432, 432)
+                .addComponent(startBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 265, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 432, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(263, 263, 263))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(346, 346, 346))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(80, 80, 80)
                 .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(88, 88, 88)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(53, 53, 53)
+                .addGap(100, 100, 100)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(150, 150, 150)
                 .addComponent(startBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(179, Short.MAX_VALUE))
+                .addContainerGap(188, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -90,8 +89,8 @@ public class HomeScreen extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextPane instructions;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JButton startBtn;
     private javax.swing.JLabel title;
     // End of variables declaration//GEN-END:variables
