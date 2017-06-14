@@ -21,20 +21,23 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="432" max="-2" attributes="0"/>
-              <Component id="startBtn" min="-2" pref="95" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="0" pref="265" max="32767" attributes="0"/>
-              <Component id="jScrollPane2" min="-2" pref="432" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="263" max="-2" attributes="0"/>
-          </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
               <Component id="title" min="-2" pref="264" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="346" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="432" max="-2" attributes="0"/>
+                      <Component id="startBtn" min="-2" pref="95" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="203" max="-2" attributes="0"/>
+                      <Component id="jScrollPane2" min="-2" pref="549" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="208" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -43,11 +46,11 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
               <Component id="title" min="-2" pref="33" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
-              <Component id="jScrollPane2" min="-2" pref="166" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="150" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+              <Component id="jScrollPane2" min="-2" pref="134" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="169" max="-2" attributes="0"/>
               <Component id="startBtn" min="-2" pref="51" max="-2" attributes="0"/>
-              <EmptySpace pref="188" max="32767" attributes="0"/>
+              <EmptySpace pref="178" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -85,8 +88,11 @@
         <Component class="javax.swing.JTextArea" name="jTextArea1">
           <Properties>
             <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Monospaced" size="14" style="0"/>
+            </Property>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Welcome to David and Sophia&apos;s typing test! When you are ready, begin by&#xa;clicking &apos;Start&apos;. You will be taken to the typing test, in which a passage of text&#xa;will be shown above, and you will be asked to copy the passage below in the&#xa;text box. When you are done typing the passage, click &apos;enter&apos;, and the time&#xa;results will be given to you shortly."/>
+            <Property name="text" type="java.lang.String" value="Welcome to David and Sophia&apos;s typing test! When you are &#xa;ready, begin by clicking &apos;Start&apos;. You will be taken to the typing&#xa;test, in which a passage of text will be shown above, and you &#xa;will be asked to copy the passage below in the text box. When&#xa;you are done typing the passage, click &apos;enter&apos;, and the time results&#xa;will be given to you shortly."/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
         </Component>
