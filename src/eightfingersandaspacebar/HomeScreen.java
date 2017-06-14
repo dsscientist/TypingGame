@@ -34,7 +34,8 @@ public class HomeScreen extends javax.swing.JPanel {
 
         setPreferredSize(new java.awt.Dimension(960, 768));
 
-        startBtn.setText("Start");
+        startBtn.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        startBtn.setText("START");
         startBtn.setToolTipText("");
         startBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
